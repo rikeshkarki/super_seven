@@ -8,3 +8,11 @@ Pact.service_consumer "super seven" do
     end
   end
 end
+
+Pact.service_consumer "client interface" do
+  has_pact_with "skill manager" do
+    mock_service :skillmanager_services do
+      port 1235
+    end
+  end
+end

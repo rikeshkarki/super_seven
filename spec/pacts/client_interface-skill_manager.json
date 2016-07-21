@@ -1,0 +1,41 @@
+{
+  "consumer": {
+    "name": "client interface"
+  },
+  "provider": {
+    "name": "skill manager"
+  },
+  "interactions": [
+    {
+      "description": "a request for a worker skill update",
+      "provider_state": "There is a worker with uid 1 and has skill with id zIEylmLnLx5ug0hlhvbk",
+      "request": {
+        "method": "put",
+        "path": "/api/v1/workers/1/skills/zIEylmLnLx5ug0hlhvbk",
+        "headers": {
+          "x-api-token": "123"
+        },
+        "body": "score=0.92"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "id": "zIEylmLnLx5ug0hlhvbk",
+          "title": "PrabhatSkill_test",
+          "status": "skilled",
+          "status_updated_at": "2016-07-19T11:10:45Z",
+          "production": {
+            "invited_at": "2016-07-18T05:32:26Z",
+            "score": 0.92
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecificationVersion": "1.0.0"
+  }
+}
