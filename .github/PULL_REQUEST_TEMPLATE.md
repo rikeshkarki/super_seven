@@ -29,7 +29,6 @@ Mention the steps to deploy it along with proper deployment and rollback strateg
 
 ##### Dependencies
 <!--- Provide description if any dependencies are there along with any relevant links.  -->
-Hi
 
 ##### Review Requests
 <!---
